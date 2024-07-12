@@ -46,6 +46,35 @@
   @apply hover:text-myDark-light;
 }
 
+form input[type="text"],
+input[type="email"],
+input[type="password"] {
+  @apply bg-myDark-dark font-brand font-regular text-white text-xs border border-white;
+}
+
+form input[type="text"],
+input[type="email"],
+input[type="password"]:focus {
+  @apply focus:outline-none focus:border-myLavender focus:ring-0;
+}
+
+.textarea {
+  @apply bg-myDark-dark font-brand font-regular text-white text-xs border border-white h-[300px] resize-none;
+  boder-top: none;
+}
+
+.textarea:focus {
+  @apply focus:outline-none focus:border-white focus:ring-0;
+}
+
+.create_button {
+  @apply bg-myPurple border border-white font-brand font-regular text-black text-base;
+}
+
+.create_button:hover {
+  @apply hover:bg-myPurple-dark text-myDark-light border-myDark-light;
+}
+
 .round-image-padding {
   border-radius: 50%;
   border: 1.5px solid #ffffff;
