@@ -60,10 +60,21 @@ input[type="password"]:focus {
 
 .textarea {
   @apply bg-myDark-dark font-brand font-regular text-white text-xs border border-white h-[300px] resize-none;
-  boder-top: none;
+  border-top: none;
+  border-left: none;
 }
 
 .textarea:focus {
+  @apply focus:outline-none focus:border-white focus:ring-0;
+}
+
+.line-numbers {
+  @apply border border-white font-brand font-regular text-xs text-myDark-light bg-myDark-dark h-[300px] w-[54px] text-right overflow-hidden resize-none;
+  border-right: none;
+  border-top: none;
+}
+
+.line-numbers:focus {
   @apply focus:outline-none focus:border-white focus:ring-0;
 }
 
