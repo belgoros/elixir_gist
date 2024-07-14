@@ -3,7 +3,7 @@
     Instantly share Elixir code, notes and snippets.
   </h1>
 </div>
-<.form for={@form}>
+<.form for={@form} phx-submit="create">
   <div class="justify-center w-full mb-10 space-y-4 px-28">
     <.input field={@form[:description]} placeholder="Gist description..." autocomplete="off" />
     <div>
