@@ -33,16 +33,18 @@ Hooks.Highlight = {
   mounted() {
     let name = this.el.getAttribute("data-name");
     let codeBlock = this.el.querySelector("pre code");
+
     if (name && codeBlock) {
       codeBlock.className = codeBlock.className.replace(/language-\S+/g, "");
       codeBlock.classList.add(`language-${this.getSyntaxType(name)}`);
       hljs.highlightElement(codeBlock);
     }
   },
+
   getSyntaxType(name) {
     let extension = name.split(".").pop();
     switch (extension) {
-      case "text":
+      case "txt":
         return "text";
       case "json":
         return "json";
@@ -93,10 +95,13 @@ Hooks.UpdateLineNumbers = {
 
   updateLineNumbers() {
     const lineNumberText = document.querySelector("#line-numbers");
+
     if (!lineNumberText) return;
 
     const lines = this.el.value.split("\n");
+
     const numbers = lines.map((_, index) => index + 1).join("\n") + "\n";
+
     lineNumberText.value = numbers;
   },
 };

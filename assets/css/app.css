@@ -46,15 +46,11 @@
   @apply hover:text-myDark-light;
 }
 
-form input[type="text"],
-input[type="email"],
-input[type="password"] {
+form input[type="text"] {
   @apply bg-myDark-dark font-brand font-regular text-white text-xs border border-white;
 }
 
-form input[type="text"],
-input[type="email"],
-input[type="password"]:focus {
+form input[type="text"]:focus {
   @apply focus:outline-none focus:border-myLavender focus:ring-0;
 }
 
@@ -85,13 +81,13 @@ input[type="password"]:focus {
 }
 
 .syntax-numbers {
-  @apply border border-white font-brand py-[12px] text-xs text-myDark-light bg-mySyntax h-auto w-[54px] text-right overflow-hidden resize-none;
+  @apply border border-white font-brand py-[28px] text-xs text-myDark-light bg-mySyntax h-auto w-[54px] text-right overflow-hidden resize-none;
   border-right: none;
   border-top: none;
 }
 
 .syntax-numbers:focus {
-  @apply focus:outline-none focus:border-white focus:ring-0;
+  @apply focus:outline-none focus:border-white;
 }
 
 .create_button {
