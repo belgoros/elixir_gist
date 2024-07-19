@@ -46,15 +46,11 @@
   @apply hover:text-myDark-light;
 }
 
-form input[type="text"],
-input[type="email"],
-input[type="password"] {
+form input[type="text"] {
   @apply bg-myDark-dark font-brand font-regular text-white text-xs border border-white;
 }
 
-form input[type="text"],
-input[type="email"],
-input[type="password"]:focus {
+form input[type="text"]:focus {
   @apply focus:outline-none focus:border-myLavender focus:ring-0;
 }
 
