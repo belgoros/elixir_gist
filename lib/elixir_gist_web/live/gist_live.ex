@@ -1,5 +1,7 @@
 defmodule ElixirGistWeb.GistLive do
   alias ElixirGist.Gists
+  alias ElixirGistWeb.GistFormComponent
+
   use ElixirGistWeb, :live_view
 
   alias ElixirGist.Gists
